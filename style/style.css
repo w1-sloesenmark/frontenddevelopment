@@ -1,0 +1,147 @@
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  font-family: bahnschrift;
+  color: #FFC045;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  max-width: 70vw;
+  border-left: 10vw solid #0A91AB;
+  border-right: 10vw solid #0A91AB;
+  background-color: #7EC1CE;
+  position: relative;
+  z-index: 0;
+  padding: 100px 5vw;
+}
+article {
+  background-color: #065471;
+  padding: 10px;
+}
+h1 {
+  background-color: #065471;
+  text-decoration: underline;
+  font-size: 50px;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: unset;
+}
+/*copyright*/
+small {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/*banner*/
+#bannerWrapper {
+  height: 130px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#banner {
+  width: 100%;
+  bottom: -100px;
+  position: absolute;
+  filter: grayscale(0.5);
+}
+/*footer*/
+footer {
+  position: relative;
+  bottom: 0;
+  width: calc(100% - 100px);
+  display: flex;
+  flex-direction: row;
+  background-color: #065471;
+  justify-content: space-around;
+  padding: 50px;
+}
+footer section h3 {
+  font-size: 30px;
+  margin: 0;
+}
+footer section a {
+  display: block;
+}
+/*navigation*/
+nav {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #065471;
+}
+nav #navLogo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav #navLogoTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav #navLinks {
+  position: relative;
+  display: flex;
+  visibility: visible;
+}
+nav #navLinks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #065471;
+}
+@media only screen and (min-width: 720px) and (max-width: 959px), only screen and (max-width: 720px) {
+  nav #navLinks {
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 48px;
+  }
+}
+nav #hamburger {
+  text-align: center;
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 720px) and (max-width: 959px), only screen and (max-width: 720px) {
+  nav #hamburger {
+    visibility: visible;
+  }
+}
+nav #hamburger:hover {
+  cursor: pointer;
+}
+nav #pageTitle {
+  visibility: hidden;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  nav #pageTitle {
+    visibility: visible;
+  }
+}

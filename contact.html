@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='./script/script.js' defer></script>
+    <link href='./style/style.css' rel='stylesheet' />
+    <link href="./style/contact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>
+                Contact pagina
+            </h1>
+            <p>
+                Welkom op de contact pagina!<br>
+                Vul je gegevens in om met ons in contact te komen!
+            </p>
+            <h2>
+                Alle velden dienen verplicht ingevuld te zijn
+            </h2>
+            <!-- formulier -->
+            <form action="contact.html">
+                <table>
+                    <tr>
+                        <td><label for="salutation">Aanhef</label></td>
+                        <td><input type="text" id="aanhef" name="aanhef" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Naam</label></td>
+                        <td><input type="text" id="fname" name="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mailadres</label></td>
+                        <td><input type="text" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phoneNumber">Telefoonnummer</label></td>
+                        <td><input type="text" id="tNumber" name="tNumber" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="questions">Vraag/opmerking</label></td>
+                        <td><textarea rows="4" cols="50" name="comment" id="comment" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" required>Ik wil mij aanmelden voor de nieuwsbrief</td>
+                    </tr>
+                </table>
+                
+
+                <input type="submit" id="button" value="Versturen">
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>
